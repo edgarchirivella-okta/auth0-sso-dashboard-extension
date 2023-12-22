@@ -20,7 +20,10 @@ export default class UserApplicationOverview extends React.Component {
 
     return (
       <div>
-        <div className="page-description">Select the application you want to log in to.</div>
+        <div className="page-description">
+          MODIFIED EXTENSION!! HELLO! Select the application you want to log in
+          to.
+        </div>
         <LoadingPanel show={loading}>
           <div className="row">
             <div className="col-xs-12 wrapper">
@@ -28,7 +31,8 @@ export default class UserApplicationOverview extends React.Component {
             </div>
           </div>
           <SearchBar
-            onReset={this.props.onReset} onChangeSearch={this.props.onChangeSearch}
+            onReset={this.props.onReset}
+            onChangeSearch={this.props.onChangeSearch}
             enabled={() => !loading}
           />
           <div className="row">
